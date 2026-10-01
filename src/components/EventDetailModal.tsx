@@ -117,9 +117,9 @@ export default function EventDetailModal({ event, onClose, onRegister }: EventDe
             <div className="space-y-4">
               <div className="p-4 rounded-xl bg-gradient-to-r from-amber-950/40 to-slate-900 border border-amber-500/30 flex items-center justify-between">
                 <div>
-                  <div className="text-xs font-mono text-amber-400 uppercase tracking-wider">First Prize / Winner</div>
+                  <div className="text-xs font-mono text-amber-400 uppercase tracking-wider">Total Prize</div>
                   <div className="text-2xl font-black font-mech text-white mt-0.5">
-                    ₹{(event.first_prize || event.prize_amount).toLocaleString('en-IN')}
+                    ₹{event.prize_amount.toLocaleString('en-IN')}
                   </div>
                 </div>
                 <Award className="w-8 h-8 text-amber-400" />

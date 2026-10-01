@@ -247,9 +247,9 @@ export default function EventDetailPage() {
 
               <div className="space-y-3 font-mono">
                 <div className="p-3 rounded-xl bg-amber-950/30 border border-amber-500/30 flex justify-between items-center">
-                  <span className="text-xs text-slate-300">1st Place / Winner</span>
+                  <span className="text-xs text-slate-300">Total Prize</span>
                   <span className="text-base font-black font-mech text-amber-400">
-                    ₹{(event.first_prize || event.prize_amount).toLocaleString('en-IN')}
+                    ₹{event.prize_amount.toLocaleString('en-IN')}
                   </span>
                 </div>
 
